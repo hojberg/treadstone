@@ -1,6 +1,4 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem 'sinatra'
-gem 'rake'
-gem 'rack'
-gem 'rack-combobot'
+# Specify your gem's dependencies in rack-combot.gemspec
+gemspec
