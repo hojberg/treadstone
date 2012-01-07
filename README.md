@@ -9,4 +9,16 @@ JavaScript.
 `gem install treadstone`
 
 ## Usage
+
+Treadstone simply needs a public folder with assets and a 
+rackup file.
+
+All you need in the rackup (config.ru) file is:
+
+```ruby
+run Treadstone
+```
+
+To run Treadstone
+
 `rackup config.ru`
