@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = "0.0.1"
   s.authors     = ["Simon Højberg"]
   s.email       = ["r.hackr@gmail.com"]
-  s.homepage    = "https://github.com/hojberg/treadstone"
+  s.homepage    = "https://github.com/criticalpair/treadstone"
   s.summary     = "asset server"
   s.description = "simple server that serves up static assets and on demand combination"
 
