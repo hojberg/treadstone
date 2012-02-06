@@ -3,12 +3,17 @@
 require 'sinatra'
 require 'rack-combobot'
 
-class Treadstone < Sinatra::Base
-  set :public_folder, "../" + File.dirname(__FILE__) + '/public'
+module Treadstone
+  class Application < Sinatra::Base
+    set :public_folder, "./public"
 
- # use Rack::Combobot
+    before do
+      @combobot = Rack::Combobot.configure(:root => settings.public_folder)
+    end
 
-  get '/combine' do
+    get '/combine' do
+      @combobot.call(env)
+    end
+
   end
-
 end
