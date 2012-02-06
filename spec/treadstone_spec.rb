@@ -5,7 +5,7 @@ require File.dirname(__FILE__) + '/spec_helper'
 include Rack::Test::Methods
 
 def app
-  Treadstone
+  Treadstone::Application 
 end
 
 describe "serving assets" do
@@ -15,7 +15,7 @@ describe "serving assets" do
   end
 
   it "should successfully server an" do
-    get "/style.css"
+    get "/styles.css"
     last_response.body.must_equal ".lorem { background: blue; }\n"
   end
 end
